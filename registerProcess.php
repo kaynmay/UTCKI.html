@@ -6,8 +6,8 @@ $last = $_GET["last"];
 
 $servername = "localhost";
 $username = "root";
-$password = "LUCvJ5BX_P";
-$dbname = "cs329e";
+$password = "x";
+$dbname = "x";
 
 $login_data = fopen("passwd.txt", "r");
 $usernames = array();

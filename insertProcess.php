@@ -5,8 +5,8 @@ $user = $_COOKIE["logged_in_user"];
 
 $servername = "localhost";
 $username = "root";
-$password = "LUCvJ5BX_P";
-$dbname = "cs329e";
+$password = "x";
+$dbname = "x";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);

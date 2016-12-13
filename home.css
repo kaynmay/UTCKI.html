@@ -1,0 +1,79 @@
+body {
+    line-height:1.6em;
+    background-color: #C7D6EE;
+    color: #28292b;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-size: 1.7em;
+}
+a {
+    color: #28292b;
+}
+#header > p {
+    text-align: center;
+    padding: .6em;
+    font-size: 1.2em;
+    font-family: Georgia, Times, Times New Roman, serif;
+}
+#logo{
+    vertical-align: text-bottom;
+}
+.navbar-custom {
+    background-color:#003d79;
+    color:#c7d6ee;
+}
+.navbar-custom .navbar-nav > li > a {
+    color:#c7d6ee;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #c7d6ee;
+}
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    background-color: #00a5d9;
+}
+.navbar-nav {
+    float:none;
+    text-align: center;
+}
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+#container {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 1000px;
+    padding: .5em;
+}
+#description {
+    padding: .5em .5em 0 .8em;
+}
+.carousel-inner > .item > img {
+    height: 300px;
+}
+h4{
+    font-size:1.3em;
+}
+h3 {
+    text-align: center;
+    border-bottom: 1px solid;
+    font-size:2em;
+}
+#upcoming{
+  padding: .8em .6em .6em .6em;
+}
+#upcoming > p {
+    padding-bottom:.5em;
+}
+#projects {
+    text-align:center;
+    padding:0 .6em .6em .6em;
+}
+#footer {
+    text-align: center;
+    background-color: #003d79;
+    color: #c7d6ee;
+    padding: 1em 0 .4em 0;
+}
+#contact{
+    color: #c7d6ee;
+}

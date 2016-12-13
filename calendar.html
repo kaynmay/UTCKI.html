@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Calendar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" title="basic style" type="text/css" href="./home.css" media="all">
+        <style>
+            h2 {
+                margin-top: 15px;
+                text-align: center;
+                font-size: 40px;
+                border-bottom: 1px solid;
+            }
+            h3{
+                border-bottom: none;
+                font-size: 30px;
+            }
+            #container{
+              padding: 0 1em 1em 1em;
+            }
+            #events{
+              padding: 1em 5.5em 1em 5.5em;
+              text-align: center;
+            }
+            #event1, #event2, #event3, #event4, #event5{
+              text-align: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <p>
+                <a href="./home.html"><img id="logo" src="./images/logo.png" alt="logo" width="100px" /></a> at the University of Texas at Austin</p>
+            <nav class="navbar navbar-custom">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="./home.html">Home</a>
+                        </li>
+                        <li><a href="./aboutUs.html">About Us</a>
+                        </li>
+                        <li><a href="./officers.html">Officers</a>
+                        </li>
+                        <li><a href="./calendar.html">Calendar</a>
+                        </li>
+                        <li><a href="./pastProjects.html">Past Projects</a>
+                        </li>
+                        <li><a href="./loggedHours.php">Log Hours</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <script>
+        $(document).ready(function(){
+            var e1 = 0;
+            var e2 = 0;
+            var e3 = 0;
+            var e4 = 0;
+            var e5 = 0;
+            $("#event1").hide();
+            $("#event2").hide();
+            $("#event3").hide();
+            $("#event4").hide();
+            $("#event5").hide();
+            $("#e1").click(function(){
+                if (e1 === 0){
+                  $("#event1").show();
+                  e1 = 1;
+                }
+                else{
+                  $("#event1").hide();
+                  e1 = 0;
+                }
+            });
+            $("#e2").click(function(){
+              if (e2 === 0){
+                $("#event2").show();
+                e2 = 1;
+              }
+              else{
+                $("#event2").hide();
+                e2 = 0;
+              }
+            });
+            $("#e3").click(function(){
+              if (e3 === 0){
+                $("#event3").show();
+                e3 = 1;
+              }
+              else{
+                $("#event3").hide();
+                e3 = 0;
+              }
+            });
+            $("#e4").click(function(){
+              if (e4 === 0){
+                $("#event4").show();
+                e4 = 1;
+              }
+              else{
+                $("#event4").hide();
+                e4 = 0;
+              }
+            });
+            $("#e5").click(function(){
+              if (e5 === 0){
+                $("#event5").show();
+                e5 = 1;
+              }
+              else{
+                $("#event5").hide();
+                e5 = 0;
+              }
+            });
+        });
+        </script>
+        <div id="container">
+            <h2>Upcoming Projects</h2>
+            <div id="events">
+              <p><i>Click event titles for more info.</i></p>
+              <h3 id="e1">Inside Books</h3>
+              <div id = "event1">
+                <p>Date: November 13, 2016. 7-10pm<br/>
+                Location: 3121 East 12th St, Austin</p>
+              </div>
+              <h3 id="e2">New Member Induction</h3>
+              <div id = "event2">
+                <p>Date: November 18, 2016. 6-9pm<br/>
+                Location: Brick Oven Restaurant</p>
+              </div>
+              <h3 id="e3">Last Meeting & PBJ Service Project</h3>
+              <div id = "event3">
+                <p>Date: Novemeber 29, 2016. 7-8pm <br/>
+                  Location: PHR 2.114</p>
+              </div>
+              <h3 id="e4">2016 Holiday Party</h3>
+              <div id = "event4">
+                <p>Date: December 2, 2016. 5-8pm<br/>
+                Location: 2400 Nueces St, 6th floor Activity Room</p>
+              </div>
+              <h3 id="e5">2017 Texas-Oklahoma DCON</h3>
+              <div id = "event5">
+                <p>Date: March 12-19, 2017.<br/>
+                Location: Irving, TX</p>
+              </div>
+            </div>
+
+        </div>
+        <div id="footer" class="col-sm-12">
+            <p>&#169; 2016 UT CKI | <a id="contact" href="./contactUs.html">Contact Us</a>
+            </p>
+        </div>
+    </body>
+
+</html>
